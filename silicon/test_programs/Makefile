@@ -1,0 +1,37 @@
+# ------------------------------------------------------------------------------
+# Description:     C compile script for the RISC-V test programs
+# Author:          Mingxuan Li, Zhantong Zhu; modified by Renati Tuerhong
+# Acknowledgement: Cursor + Claude
+# Date:            2026-07-15
+# ------------------------------------------------------------------------------
+
+RISCV_GCC?=~/RISC-V-GCC-TOOLCHAIN/bin/riscv-none-elf-gcc
+RISCV_OBJDUMP?=~/RISC-V-GCC-TOOLCHAIN/bin/riscv-none-elf-objdump
+
+SRC_DIR=src
+UTILS_DIR=utils
+BUILD_DIR=build
+BINARY_DIR=bin
+
+MAIN?=main
+OUTPUT_ELF=$(BINARY_DIR)/$(MAIN).elf
+OUTPUT_ASM=$(BUILD_DIR)/$(MAIN).asm
+OUTPUT_HEX=$(BUILD_DIR)/$(MAIN).hex
+
+ALL_DEPENDENCIES = $(shell $(RISCV_GCC) -M $(SRC_DIR)/$(MAIN).c 2>/dev/null | sed -e 's/^[^:]*: *//' -e 's/\\$$//' | tr -d '\n')
+SRC_FILES = $(sort $(foreach file, $(patsubst %.h,%.c, $(filter $(SRC_DIR)/%, $(ALL_DEPENDENCIES))), $(if $(wildcard $(file)), $(file))))
+HEADER_FILES = $(filter %.h, $(ALL_DEPENDENCIES))
+UTILS = $(wildcard $(UTILS_DIR)/*.py)
+
+all: $(OUTPUT_ELF)
+
+$(OUTPUT_ELF): $(SRC_FILES) $(HEADER_FILES) $(SRC_DIR)/startup.S $(UTILS)
+	@mkdir -p $(BUILD_DIR)
+	@mkdir -p $(BINARY_DIR)
+	$(RISCV_GCC) -mcmodel=medany -Wall -mexplicit-relocs -march=rv64imfd_zicsr -mabi=lp64 -nostdlib -static -Tlinker.ld -ggdb -Wl,--no-gc-sections -fno-builtin -fno-tree-loop-distribute-patterns -O0 -msmall-data-limit=0 $(SRC_DIR)/startup.S $(SRC_FILES) -o $(OUTPUT_ELF)
+	$(RISCV_OBJDUMP) -D -s $(OUTPUT_ELF) > $(OUTPUT_ASM)
+	python3 $(UTILS_DIR)/asm2hex.py $(OUTPUT_ASM) $(OUTPUT_HEX)
+	python3 $(UTILS_DIR)/gdb_scripts.py $(MAIN)
+
+clean:
+	rm -rf $(BUILD_DIR)

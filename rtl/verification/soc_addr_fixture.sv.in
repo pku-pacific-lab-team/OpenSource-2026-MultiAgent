@@ -1,0 +1,121 @@
+// Copyright 2025-2026 School of Integrated Circuits, Peking University
+// SPDX-License-Identifier: Apache-2.0 WITH SHL-2.1
+//
+// Licensed under the Solderpad Hardware License v 2.1 (the "License"); you may
+// not use this file except in compliance with the License, or, at your option,
+// the Apache License version 2.0. You may obtain a copy of the License at
+// https://solderpad.org/licenses/SHL-2.1/
+//
+// Template of the address-attribute test fixture; verification/make_addr_harness.py fills in @NAME@ and @CFG@.
+module @NAME@(output logic done=0);
+  import ariane_pkg::*;
+  @CFG@
+  logic clk=0,rst=0,cache_en=1;
+  logic [1:0] soc_id=0;
+  logic [config_pkg::NrMaxRules-1:0][63:0] CachedRegionAddrBase;
+  always #5 clk=~clk;
+  always_comb begin
+    CachedRegionAddrBase='0;
+    case(soc_id)
+      @BASES@
+    endcase
+  end
+  dcache_req_i_t cache_req;
+  dcache_req_o_t cache_rsp;
+  logic nc,miss;
+  wt_dcache_ctrl #(.CVA6Cfg(CVA6Cfg)) dc(
+    .clk_i(clk),.rst_ni(rst),.cache_en_i(cache_en),.req_port_i(cache_req),.req_port_o(cache_rsp),
+    .miss_req_o(miss),.miss_nc_o(nc),.miss_ack_i(1'b0),.miss_replay_i(1'b0),
+    .miss_rtrn_vld_i(1'b0),.wr_cl_vld_i(1'b0),.rd_ack_i(1'b1),.rd_data_i('0),
+    .rd_user_i('0),.rd_vld_bits_i('0),.rd_hit_oh_i('0),.CachedRegionAddrBase_i(CachedRegionAddrBase));
+  lsu_ctrl_t lsu;
+  dcache_req_o_t load_rsp;
+  dcache_req_i_t load_req;
+  exception_t ex;
+  logic [riscv::PLEN-1:0] pa=0;
+  logic [riscv::PPNW-1:0] ppn=0;
+  logic [TRANS_ID_BITS-1:0] commit_id=0;
+  logic sb_empty=1,wb_safe=1,load_valid=0;
+  load_unit #(.CVA6Cfg(CVA6Cfg)) ld(
+    .clk_i(clk),.rst_ni(rst),.flush_i(1'b0),.valid_i(load_valid),.lsu_ctrl_i(lsu),
+    .paddr_i(pa),.ex_i(ex),.dtlb_hit_i(1'b1),.dtlb_ppn_i(ppn),.page_offset_matches_i(1'b0),
+    .store_buffer_empty_i(sb_empty),.commit_tran_id_i(commit_id),.req_port_i(load_rsp),
+    .req_port_o(load_req),.dcache_wbuffer_not_ni_i(wb_safe));
+  // Model the cache acknowledgement of a killed speculative lookup.
+  always_comb begin
+    load_rsp='0;load_rsp.data_gnt=1;
+    load_rsp.data_rvalid=load_req.kill_req;
+    load_rsp.data_rid=ld.ldbuf_last_id_q;
+  end
+  int checks=0;
+  task automatic reset_units;
+    @(negedge clk);rst=0;cache_req='0;load_valid=0;lsu='0;ex='0;
+    repeat(3) @(negedge clk);rst=1;
+  endtask
+  task automatic cache_check(input logic[63:0] addr,input bit cached);
+    reset_units();
+    cache_req.address_index=addr[DCACHE_INDEX_WIDTH-1:0];
+    cache_req.address_tag=addr[DCACHE_INDEX_WIDTH+:DCACHE_TAG_WIDTH];
+    cache_req.data_size=3;cache_req.data_req=1;cache_req.tag_valid=1;
+    repeat(6) @(negedge clk);
+    if(!miss)$fatal(1,"%m no dcache miss for address %h",addr);
+    if(nc !== !cached)$fatal(1,"%m cache addr=%h die=%0d nc=%b expected=%b",addr,soc_id,nc,!cached);
+    checks++;
+  endtask
+  initial begin
+    for(int die=0;die<4;die++)begin
+      logic[63:0] b;
+      soc_id=2'(die);b=64'(die)<<32;
+      cache_en=1;
+      cache_check(b,0);cache_check(b+'h400,0);cache_check(b+'hfff,0);
+      cache_check(b+'h1000,0);cache_check(b+'h7fffffff,0);
+      cache_check(b+'h80000000,1);cache_check(b+'h8fffffff,1);
+      cache_check(b+'h90000000,1);cache_check(b+'h9fffffff,1);
+      cache_check(b+'ha0000000,0);
+      cache_check((64'((die+1)%4)<<32)+'h80000000,0);
+      cache_en=0;cache_check(b+'h80000000,0);cache_check(b+'h90000000,0);
+    end
+    // Config boundary checks (4KiB windows); use the production config_pkg predicate.
+    for(int die=0;die<4;die++)begin
+      logic[63:0] b;
+      b=64'(die)<<32;
+      if(!config_pkg::is_inside_nonidempotent_regions(CVA6Cfg,b) ||
+         !config_pkg::is_inside_nonidempotent_regions(CVA6Cfg,b+'hfff) ||
+         config_pkg::is_inside_nonidempotent_regions(CVA6Cfg,b+'h1000) ||
+         config_pkg::is_inside_nonidempotent_regions(CVA6Cfg,b-1))
+        $fatal(1,"%m non-idempotent window boundary die=%0d",die);
+      checks+=4;
+      // Actual load_unit stall conditions: all combinations of commit/store/writebuffer.
+      reset_units();pa=riscv::PLEN'(b+'h400);ppn=riscv::PPNW'(b>>12);lsu.trans_id=1;
+      for(int c=0;c<8;c++)begin
+        commit_id=c[0] ? 1:0;sb_empty=c[1];wb_safe=c[2];#1;
+        if(ld.stall_ni !== (c!=7))$fatal(1,"%m NI stall combination %0d die=%0d",c,die);
+        checks++;
+      end
+      // Memory traffic is not made NI merely by enabling the feature.
+      pa=riscv::PLEN'(b+'h90000000);ppn=riscv::PPNW'(pa>>12);
+      commit_id=0;sb_empty=0;wb_safe=0;#1;
+      if(ld.stall_ni)$fatal(1,"%m DRAM falsely NI");checks++;
+      // Drive a speculative Debug load through its FSM. It must be killed and not accepted.
+      reset_units();pa=riscv::PLEN'(b+'h400);ppn=riscv::PPNW'(b>>12);
+      lsu.vaddr=riscv::VLEN'(pa);lsu.trans_id=1;lsu.operation=LD;commit_id=0;
+      sb_empty=1;wb_safe=1;load_valid=1;
+      repeat(6) begin
+        @(negedge clk);
+        if(ld.pop_ld_o || (load_req.tag_valid && !load_req.kill_req))$fatal(1,"%m speculative NI load accepted");
+      end
+      if(!ld.stall_ni)$fatal(1,"%m expected NI stall");
+      commit_id=1;
+      begin
+        bit accepted=0;
+        for(int c=0;c<12;c++)begin
+          if(ld.pop_ld_o)accepted=1;
+          @(negedge clk);
+          if(accepted)break;
+        end
+        if(!accepted)$fatal(1,"%m committed debug load did not resume");checks++;
+      end
+    end
+    $display("[PASS] %m address/cache/NI checks=%0d",checks);done=1;
+  end
+endmodule

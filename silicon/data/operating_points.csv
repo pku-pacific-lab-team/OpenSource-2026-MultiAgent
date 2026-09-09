@@ -1,0 +1,5 @@
+point,vdd_board_V,f_MHz,v_int_V,i_die_mA,p_die_mW,p_4die_mW,note
+peak_efficiency,0.55,390,0.5303,357.8,196.8,787.1,full-load operating point on the calibrated curve
+nominal,0.8,800,0.7412,1068.9,855.1,3420.5,full-load operating point on the calibrated curve
+peak_performance,1,990,0.9071,1689.3,1689.3,6757.3,full-load operating point on the calibrated curve
+min_power_mode,0.55,35,,45.8,25.2,100.7,"lowest DCO code, full load, family median of 22 dies"

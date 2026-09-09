@@ -1,0 +1,31 @@
+{
+  "format_version": 1,
+  "dataset": "wikitext/wikitext-2-raw-v1:test",
+  "sampling": {
+    "non_overlapping_blocks": 64,
+    "sequence_length": 2048,
+    "seed": 42
+  },
+  "common_configuration": {
+    "group_size": 32,
+    "e8_scale": true,
+    "e8_scale_op": "ceil",
+    "clip_style": "sym",
+    "model_dtype": "bfloat16",
+    "sf_block_size": 32,
+    "sf_reduction": "mean",
+    "topk_blocks": [
+      32,
+      40
+    ],
+    "force_first_valid_block": true,
+    "force_diagonal_block": true
+  },
+  "notes": [
+    "MXINT8 reports disable Attention Hadamard.",
+    "MXINT4 reports enable Attention Hadamard.",
+    "All included sparse runs have zero dense fallbacks.",
+    "Model weights and dataset text are not included."
+  ],
+  "model_attention_masks": "SF Top-K selection ranks only candidate blocks permitted by each model attention mask, including sliding-window constraints."
+}

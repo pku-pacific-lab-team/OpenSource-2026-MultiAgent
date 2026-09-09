@@ -1,0 +1,201 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "01 | run_evaluation.py | Main flow walkthrough",
+      "type": "debugpy",
+      "request": "launch",
+      "pythonArgs": [
+        "-Xfrozen_modules=off"
+      ],
+      "program": "${workspaceFolder}/run_evaluation.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "stopOnEntry": true,
+      "subProcess": false,
+      "showReturnValue": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "CUDA_VISIBLE_DEVICES": "${input:cudaDevice}",
+        "OMP_NUM_THREADS": "1",
+        "TOKENIZERS_PARALLELISM": "false"
+      },
+      "args": [
+        "--model-path",
+        "${input:modelPath}",
+        "--seqlen",
+        "512",
+        "--nsamples",
+        "1",
+        "--batch-size",
+        "1",
+        "--mxint-bits",
+        "8",
+        "--group-size",
+        "32",
+        "--e8-scale",
+        "--e8-scale-op",
+        "ceil",
+        "--clip-style",
+        "sym",
+        "--w-quant-inplace",
+        "--sf-sparse-attention",
+        "--sf-sparse-block-size",
+        "32",
+        "--sf-sparse-reduction",
+        "mean",
+        "--topk",
+        "8",
+        "--kl-topk",
+        "16",
+        "--metrics-output",
+        "results/debug/01_run_evaluation_metrics.json"
+      ]
+    },
+    {
+      "name": "SF Dataflow: Evaluation (project code)",
+      "type": "debugpy",
+      "request": "launch",
+      "pythonArgs": [
+        "-Xfrozen_modules=off"
+      ],
+      "program": "${workspaceFolder}/run_evaluation.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "subProcess": false,
+      "showReturnValue": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "CUDA_VISIBLE_DEVICES": "${input:cudaDevice}",
+        "OMP_NUM_THREADS": "1",
+        "TOKENIZERS_PARALLELISM": "false"
+      },
+      "args": [
+        "--model-path",
+        "${input:modelPath}",
+        "--seqlen",
+        "${input:sequenceLength}",
+        "--nsamples",
+        "${input:numSamples}",
+        "--batch-size",
+        "1",
+        "--mxint-bits",
+        "${input:mxintBits}",
+        "--group-size",
+        "32",
+        "--e8-scale",
+        "--e8-scale-op",
+        "ceil",
+        "--clip-style",
+        "sym",
+        "--w-quant-inplace",
+        "--sf-sparse-attention",
+        "--sf-sparse-block-size",
+        "32",
+        "--sf-sparse-reduction",
+        "mean",
+        "--topk",
+        "${input:topK}",
+        "--kl-topk",
+        "16",
+        "--metrics-output",
+        "results/debug_sf_dataflow_metrics.json"
+      ]
+    },
+    {
+      "name": "SF Dataflow: Evaluation (full stack)",
+      "type": "debugpy",
+      "request": "launch",
+      "pythonArgs": [
+        "-Xfrozen_modules=off"
+      ],
+      "program": "${workspaceFolder}/run_evaluation.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "subProcess": false,
+      "showReturnValue": true,
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}",
+        "CUDA_VISIBLE_DEVICES": "${input:cudaDevice}",
+        "OMP_NUM_THREADS": "1",
+        "TOKENIZERS_PARALLELISM": "false"
+      },
+      "args": [
+        "--model-path",
+        "${input:modelPath}",
+        "--seqlen",
+        "${input:sequenceLength}",
+        "--nsamples",
+        "${input:numSamples}",
+        "--batch-size",
+        "1",
+        "--mxint-bits",
+        "${input:mxintBits}",
+        "--group-size",
+        "32",
+        "--e8-scale",
+        "--e8-scale-op",
+        "ceil",
+        "--clip-style",
+        "sym",
+        "--w-quant-inplace",
+        "--sf-sparse-attention",
+        "--sf-sparse-block-size",
+        "32",
+        "--sf-sparse-reduction",
+        "mean",
+        "--topk",
+        "${input:topK}",
+        "--kl-topk",
+        "16",
+        "--metrics-output",
+        "results/debug_sf_dataflow_metrics.json"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "modelPath",
+      "type": "promptString",
+      "description": "Model path or Hugging Face model ID",
+      "default": "Qwen/Qwen3-8B"
+    },
+    {
+      "id": "mxintBits",
+      "type": "pickString",
+      "description": "MXINT element bit width",
+      "options": [
+        "8",
+        "4"
+      ],
+      "default": "8"
+    },
+    {
+      "id": "topK",
+      "type": "promptString",
+      "description": "Selected key blocks per query block",
+      "default": "8"
+    },
+    {
+      "id": "sequenceLength",
+      "type": "promptString",
+      "description": "Evaluation sequence length (multiple of 32 recommended)",
+      "default": "512"
+    },
+    {
+      "id": "numSamples",
+      "type": "promptString",
+      "description": "Number of evaluation blocks; keep 1 for step debugging",
+      "default": "1"
+    },
+    {
+      "id": "cudaDevice",
+      "type": "promptString",
+      "description": "CUDA device index",
+      "default": "0"
+    }
+  ]
+}

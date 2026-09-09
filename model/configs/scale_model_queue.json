@@ -1,0 +1,142 @@
+{
+  "format_version": 1,
+  "description": "Cross-family MXINT8/MXINT4 + SF Sparse scale study",
+  "models": [
+    {
+      "slug": "qwen3_1_7b",
+      "family": "qwen3",
+      "requested_model_id": "Qwen/Qwen3-1.7B",
+      "model_id": "Qwen/Qwen3-1.7B",
+      "parameters_b": 2.032,
+      "weight_size_gib": 3.79,
+      "expected_attention_layers": 28,
+      "head_dim": 128,
+      "adapter": "QuantQwen3Attention",
+      "status": "supported"
+    },
+    {
+      "slug": "qwen3_4b",
+      "family": "qwen3",
+      "requested_model_id": "Qwen/Qwen3-4B",
+      "model_id": "Qwen/Qwen3-4B",
+      "parameters_b": 4.022,
+      "weight_size_gib": 7.5,
+      "expected_attention_layers": 36,
+      "head_dim": 128,
+      "adapter": "QuantQwen3Attention",
+      "status": "supported"
+    },
+    {
+      "slug": "qwen3_8b",
+      "family": "qwen3",
+      "requested_model_id": "Qwen/Qwen3-8B",
+      "model_id": "Qwen/Qwen3-8B",
+      "parameters_b": 8.191,
+      "weight_size_gib": 15.26,
+      "expected_attention_layers": 36,
+      "head_dim": 128,
+      "adapter": "QuantQwen3Attention",
+      "status": "supported"
+    },
+    {
+      "slug": "llama3_2_1b",
+      "family": "llama_compatible",
+      "requested_model_id": "meta-llama/Llama-3.2-1B",
+      "model_id": "unsloth/Llama-3.2-1B",
+      "parameters_b": 1.236,
+      "weight_size_gib": 2.31,
+      "expected_attention_layers": 16,
+      "head_dim": 64,
+      "adapter": "QuantLlamaAttention",
+      "status": "supported",
+      "source_note": "Evaluation used the listed public BF16 mirror; review the original model license before use"
+    },
+    {
+      "slug": "smollm2_1_7b",
+      "family": "llama_compatible",
+      "requested_model_id": "HuggingFaceTB/SmolLM2-1.7B",
+      "model_id": "HuggingFaceTB/SmolLM2-1.7B",
+      "parameters_b": 1.711,
+      "weight_size_gib": 3.19,
+      "expected_attention_layers": 24,
+      "head_dim": 64,
+      "adapter": "QuantLlamaAttention",
+      "status": "supported"
+    },
+    {
+      "slug": "llama3_2_3b",
+      "family": "llama_compatible",
+      "requested_model_id": "meta-llama/Llama-3.2-3B",
+      "model_id": "unsloth/Llama-3.2-3B",
+      "parameters_b": 3.213,
+      "weight_size_gib": 5.99,
+      "expected_attention_layers": 28,
+      "head_dim": 128,
+      "adapter": "QuantLlamaAttention",
+      "status": "supported",
+      "source_note": "Evaluation used the listed public BF16 mirror; review the original model license before use"
+    },
+    {
+      "slug": "llama2_7b",
+      "family": "llama_compatible",
+      "requested_model_id": "NousResearch/Llama-2-7b-hf",
+      "model_id": "NousResearch/Llama-2-7b-hf",
+      "parameters_b": 6.738,
+      "weight_size_gib": 12.56,
+      "expected_attention_layers": 32,
+      "head_dim": 128,
+      "adapter": "QuantLlamaAttention",
+      "status": "supported"
+    },
+    {
+      "slug": "mistral_7b",
+      "family": "mistral",
+      "requested_model_id": "mistralai/Mistral-7B-v0.3",
+      "model_id": "mistralai/Mistral-7B-v0.3",
+      "parameters_b": 7.248,
+      "weight_size_gib": 13.5,
+      "expected_attention_layers": 32,
+      "head_dim": 128,
+      "adapter": "QuantMistralAttention",
+      "status": "supported"
+    },
+    {
+      "slug": "pythia_6_9b",
+      "family": "gpt_neox",
+      "requested_model_id": "EleutherAI/pythia-6.9b",
+      "model_id": "EleutherAI/pythia-6.9b",
+      "parameters_b": 6.991,
+      "weight_size_gib": 13.02,
+      "expected_attention_layers": 32,
+      "head_dim": 128,
+      "adapter": "QuantGPTNeoXAttention",
+      "status": "supported"
+    },
+    {
+      "slug": "gemma3_1b",
+      "family": "gemma3",
+      "requested_model_id": "google/gemma-3-1b-pt",
+      "model_id": "unsloth/gemma-3-1b-pt",
+      "parameters_b": 1.0,
+      "weight_size_gib": 1.87,
+      "expected_attention_layers": 26,
+      "head_dim": 256,
+      "adapter": "QuantGemma3Attention",
+      "status": "supported",
+      "source_note": "Evaluation used the listed BF16 mirror under the Gemma license; users must review and accept the applicable model terms"
+    },
+    {
+      "slug": "phi2_2_7b",
+      "family": "phi",
+      "requested_model_id": "microsoft/phi-2",
+      "model_id": "microsoft/phi-2",
+      "parameters_b": 2.78,
+      "weight_size_gib": 5.18,
+      "expected_attention_layers": 32,
+      "head_dim": 80,
+      "adapter": "QuantPhiAttention",
+      "status": "supported",
+      "source_note": "head_dim=80 uses deterministic 64+16 block-diagonal normalized Hadamard rotations"
+    }
+  ]
+}

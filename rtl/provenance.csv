@@ -1,0 +1,521 @@
+file,category,upstream_repository,upstream_url,upstream_path,upstream_revision,differing_lines,notice
+cpu_cva6/Flist.cva6_gate,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+cpu_cva6/acc_dispatcher.sv,include-path,cva6,https://github.com/openhwgroup/cva6,core/acc_dispatcher.sv,commit 7cd183b710d1 (2023-10-18) .. before 37427a75a91e (2024-01-17),,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+cpu_cva6/alu.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/alu.sv,commit e5d86993dfc1 (2023-12-07) .. before 3afe870d78ab (2024-01-15),,
+cpu_cva6/amo_buffer.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/amo_buffer.sv,commit 7cd183b710d1 (2023-10-18) .. before aed4ed7c2350 (2024-03-13),,
+cpu_cva6/ariane_regfile.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/ariane_regfile.sv,20240827.feature.interconnect..v5.3.0,,
+cpu_cva6/ariane_regfile_ff.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/ariane_regfile_ff.sv,20240827.feature.interconnect..v5.3.0,,
+cpu_cva6/ariane_regfile_fpga.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/ariane_regfile_fpga.sv,20240827.feature.interconnect..v5.1.0,,
+cpu_cva6/axi_shim.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/axi_shim.sv,commit 738d53af1c34 (2023-12-13) .. before 4817575de929 (2024-03-18),,
+cpu_cva6/branch_unit.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/branch_unit.sv,commit 2b3392690044 (2023-12-19) .. before fa101fae7a19 (2024-01-25),,
+cpu_cva6/cache_subsystem/amo_alu.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/amo_alu.sv,20240827.feature.interconnect..v5.3.0,,
+cpu_cva6/cache_subsystem/axi_adapter.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/axi_adapter.sv,commit c51819dcbdf3 (2023-12-04) .. before bd4b57cc64b0 (2024-03-18),,
+cpu_cva6/cache_subsystem/cache_ctrl.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/cache_ctrl.sv,commit 8ef0d66d655a (2023-12-06) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/cache_subsystem/cva6_icache.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/cva6_icache.sv,v5.0.0,214,adapted for the PKU_2602 SoC integration (214 differing lines against the upstream version)
+cpu_cva6/cache_subsystem/cva6_icache_axi_wrapper.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/cva6_icache_axi_wrapper.sv,commit 7cd183b710d1 (2023-10-18) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/cache_subsystem/miss_handler.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/miss_handler.sv,commit c0a30e1c852b (2023-12-06) .. before 49cdc9045c08 (2024-01-15),,
+cpu_cva6/cache_subsystem/std_cache_subsystem.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/std_cache_subsystem.sv,commit 7cd183b710d1 (2023-10-18) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/cache_subsystem/std_nbdcache.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/std_nbdcache.sv,v5.0.0,123,adapted for the PKU_2602 SoC integration (123 differing lines against the upstream version)
+cpu_cva6/cache_subsystem/tag_cmp.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/tag_cmp.sv,commit 7cd183b710d1 (2023-10-18) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/cache_subsystem/wt_axi_adapter.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/wt_axi_adapter.sv,v5.0.0,94,adapted for the PKU_2602 SoC integration (94 differing lines against the upstream version)
+cpu_cva6/cache_subsystem/wt_cache_subsystem.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/wt_cache_subsystem.sv,v5.0.0,97,adapted for the PKU_2602 SoC integration (97 differing lines against the upstream version)
+cpu_cva6/cache_subsystem/wt_dcache.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/wt_dcache.sv,v5.0.0,157,adapted for the PKU_2602 SoC integration (157 differing lines against the upstream version)
+cpu_cva6/cache_subsystem/wt_dcache_ctrl.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/wt_dcache_ctrl.sv,v5.0.0,70,adapted for the PKU_2602 SoC integration (70 differing lines against the upstream version)
+cpu_cva6/cache_subsystem/wt_dcache_mem.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/wt_dcache_mem.sv,v5.0.0,257,adapted for the PKU_2602 SoC integration (257 differing lines against the upstream version)
+cpu_cva6/cache_subsystem/wt_dcache_missunit.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/wt_dcache_missunit.sv,commit c51819dcbdf3 (2023-12-04) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/cache_subsystem/wt_dcache_wbuffer.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/wt_dcache_wbuffer.sv,v5.0.0,224,adapted for the PKU_2602 SoC integration (224 differing lines against the upstream version)
+cpu_cva6/cache_subsystem/wt_l15_adapter.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cache_subsystem/wt_l15_adapter.sv,commit 7cd183b710d1 (2023-10-18) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/commit_stage.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/commit_stage.sv,commit 79634482874c (2023-11-21) .. before 3f8649ec7ed3 (2024-02-08),,
+cpu_cva6/compressed_decoder.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/compressed_decoder.sv,commit 25f85a56989a (2023-11-16) .. before 3afe870d78ab (2024-01-15),,
+cpu_cva6/controller.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/controller.sv,commit 79634482874c (2023-11-21) .. before 3f8649ec7ed3 (2024-02-08),,
+cpu_cva6/csr_buffer.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/csr_buffer.sv,commit 7cd183b710d1 (2023-10-18) .. before f332688fc015 (2024-02-23),,
+cpu_cva6/csr_regfile.sv,large,cva6,https://github.com/openhwgroup/cva6,core/csr_regfile.sv,v5.0.0,670,adapted for the PKU_2602 SoC integration (670 differing lines against the upstream version)
+cpu_cva6/cva6.sv,large,cva6,https://github.com/openhwgroup/cva6,core/cva6.sv,v5.0.0,1034,adapted for the PKU_2602 SoC integration (1034 differing lines against the upstream version); the inactive RVFI block that referenced the removed `rvfi_o` port is commented out in this release
+cpu_cva6/cva6_accel_first_pass_decoder_stub.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cva6_accel_first_pass_decoder_stub.sv,commit 7cd183b710d1 (2023-10-18) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/cvxif_example/cvxif_example_coprocessor.sv,medium,cva6,https://github.com/openhwgroup/cva6,core/cvxif_example/cvxif_example_coprocessor.sv,v5.0.0,11,adapted for the PKU_2602 SoC integration (11 differing lines against the upstream version)
+cpu_cva6/cvxif_example/instr_decoder.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cvxif_example/instr_decoder.sv,20240827.feature.interconnect..v5.1.0,,
+cpu_cva6/cvxif_fu.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cvxif_fu.sv,commit c51819dcbdf3 (2023-12-04) .. before fa101fae7a19 (2024-01-25),,
+cpu_cva6/decoder.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/decoder.sv,commit 8c14b6aa4a3e (2023-12-17) .. before 3afe870d78ab (2024-01-15),,
+cpu_cva6/ex_stage.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/ex_stage.sv,commit c51819dcbdf3 (2023-12-04) .. before 0ce6b40b2658 (2024-01-18),,
+cpu_cva6/fpu/README.md,identical,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/README.md,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpnew_cast_multi.sv,include-path,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_cast_multi.sv,v5.0.0..v5.0.1,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+cpu_cva6/fpu/fpnew_classifier.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_classifier.sv,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpnew_divsqrt_multi.sv,small,cvfpu,https://github.com/openhwgroup/cvfpu,src/fpnew_divsqrt_multi.sv,v0.7.0,2,minor local edits (2 differing lines against the upstream version)
+cpu_cva6/fpu/fpnew_fma.sv,include-path,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_fma.sv,v5.0.0..v5.0.1,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+cpu_cva6/fpu/fpnew_fma_multi.sv,include-path,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_fma_multi.sv,v5.0.0..v5.0.1,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+cpu_cva6/fpu/fpnew_noncomp.sv,include-path,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_noncomp.sv,v5.0.0..v5.0.1,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+cpu_cva6/fpu/fpnew_opgroup_block.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_opgroup_block.sv,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpnew_opgroup_fmt_slice.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_opgroup_fmt_slice.sv,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpnew_opgroup_multifmt_slice.sv,small,cvfpu,https://github.com/openhwgroup/cvfpu,src/fpnew_opgroup_multifmt_slice.sv,v0.7.0,5,minor local edits (5 differing lines against the upstream version)
+cpu_cva6/fpu/fpnew_rounding.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_rounding.sv,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpnew_top.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_top.sv,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpu_div_sqrt_mvp/control_mvp.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/pulp-platform/fpnew/src/fpu_div_sqrt_mvp/hdl/control_mvp.sv,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpu_div_sqrt_mvp/defs_div_sqrt_mvp.sv,small,fpu_div_sqrt_mvp,https://github.com/pulp-platform/fpu_div_sqrt_mvp,hdl/defs_div_sqrt_mvp.sv,v1.0.1,8,minor local edits (8 differing lines against the upstream version)
+cpu_cva6/fpu/fpu_div_sqrt_mvp/div_sqrt_mvp_wrapper.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/pulp-platform/fpnew/src/fpu_div_sqrt_mvp/hdl/div_sqrt_mvp_wrapper.sv,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpu_div_sqrt_mvp/div_sqrt_top_mvp.sv,small,fpu_div_sqrt_mvp,https://github.com/pulp-platform/fpu_div_sqrt_mvp,hdl/div_sqrt_top_mvp.sv,v1.0.1,2,minor local edits (2 differing lines against the upstream version)
+cpu_cva6/fpu/fpu_div_sqrt_mvp/iteration_div_sqrt_mvp.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/pulp-platform/fpnew/src/fpu_div_sqrt_mvp/hdl/iteration_div_sqrt_mvp.sv,v5.0.0..v5.0.1,,
+cpu_cva6/fpu/fpu_div_sqrt_mvp/norm_div_sqrt_mvp.sv,medium,fpu_div_sqrt_mvp,https://github.com/pulp-platform/fpu_div_sqrt_mvp,hdl/norm_div_sqrt_mvp.sv,v1.0.1,32,adapted for the PKU_2602 SoC integration (32 differing lines against the upstream version)
+cpu_cva6/fpu/fpu_div_sqrt_mvp/nrbd_nrsc_mvp.sv,small,fpu_div_sqrt_mvp,https://github.com/pulp-platform/fpu_div_sqrt_mvp,hdl/nrbd_nrsc_mvp.sv,v1.0.1,2,minor local edits (2 differing lines against the upstream version)
+cpu_cva6/fpu/fpu_div_sqrt_mvp/preprocess_mvp.sv,medium,fpu_div_sqrt_mvp,https://github.com/pulp-platform/fpu_div_sqrt_mvp,hdl/preprocess_mvp.sv,v1.0.1,14,adapted for the PKU_2602 SoC integration (14 differing lines against the upstream version)
+cpu_cva6/fpu_wrap.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/fpu_wrap.sv,commit 7cd183b710d1 (2023-10-18) .. before fa101fae7a19 (2024-01-25),,
+cpu_cva6/frontend/bht.sv,large,cva6,https://github.com/openhwgroup/cva6,core/frontend/bht.sv,v5.0.0,73,adapted for the PKU_2602 SoC integration (73 differing lines against the upstream version)
+cpu_cva6/frontend/btb.sv,large,cva6,https://github.com/openhwgroup/cva6,core/frontend/btb.sv,v5.0.0,70,adapted for the PKU_2602 SoC integration (70 differing lines against the upstream version)
+cpu_cva6/frontend/frontend.sv,large,cva6,https://github.com/openhwgroup/cva6,core/frontend/frontend.sv,v5.0.0,244,adapted for the PKU_2602 SoC integration (244 differing lines against the upstream version)
+cpu_cva6/frontend/instr_queue.sv,large,cva6,https://github.com/openhwgroup/cva6,core/frontend/instr_queue.sv,v5.0.0,155,adapted for the PKU_2602 SoC integration (155 differing lines against the upstream version)
+cpu_cva6/frontend/instr_scan.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/frontend/instr_scan.sv,commit 7cd183b710d1 (2023-10-18) .. before 9d0c700f42db (2024-02-06),,
+cpu_cva6/frontend/ras.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/frontend/ras.sv,commit 7cd183b710d1 (2023-10-18) .. before 9d0c700f42db (2024-02-06),,
+cpu_cva6/id_stage.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/id_stage.sv,commit 7cd183b710d1 (2023-10-18) .. before 0ce6b40b2658 (2024-01-18),,
+cpu_cva6/instr_realign.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/instr_realign.sv,commit c51819dcbdf3 (2023-12-04) .. before 9d0c700f42db (2024-02-06),,
+cpu_cva6/issue_read_operands.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/issue_read_operands.sv,commit 738d53af1c34 (2023-12-13) .. before fa101fae7a19 (2024-01-25),,
+cpu_cva6/issue_stage.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/issue_stage.sv,commit 7cd183b710d1 (2023-10-18) .. before 0ce6b40b2658 (2024-01-18),,
+cpu_cva6/load_store_unit.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/load_store_unit.sv,commit 3720295bd3b3 (2023-12-04) .. before 0ce6b40b2658 (2024-01-18),,
+cpu_cva6/load_unit.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/load_unit.sv,commit 738d53af1c34 (2023-12-13) .. before f332688fc015 (2024-02-23),,
+cpu_cva6/lsu_bypass.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/lsu_bypass.sv,commit 7cd183b710d1 (2023-10-18) .. before f332688fc015 (2024-02-23),,
+cpu_cva6/mmu_sv32/cva6_mmu_sv32.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/mmu_sv32/cva6_mmu_sv32.sv,commit c51819dcbdf3 (2023-12-04) .. before fa101fae7a19 (2024-01-25),,
+cpu_cva6/mmu_sv32/cva6_ptw_sv32.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/mmu_sv32/cva6_ptw_sv32.sv,commit 7cd183b710d1 (2023-10-18) .. before 9fb5db25555e (2024-02-29),,
+cpu_cva6/mmu_sv32/cva6_shared_tlb_sv32.sv,medium,cva6,https://github.com/openhwgroup/cva6,core/mmu_sv32/cva6_shared_tlb_sv32.sv,v5.0.0,41,adapted for the PKU_2602 SoC integration (41 differing lines against the upstream version)
+cpu_cva6/mmu_sv32/cva6_tlb_sv32.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/mmu_sv32/cva6_tlb_sv32.sv,commit 7cd183b710d1 (2023-10-18) .. before 9fb5db25555e (2024-02-29),,
+cpu_cva6/mmu_sv39/mmu.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/mmu_sv39/mmu.sv,commit 7cd183b710d1 (2023-10-18) .. before fa101fae7a19 (2024-01-25),,
+cpu_cva6/mmu_sv39/ptw.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/mmu_sv39/ptw.sv,commit 7cd183b710d1 (2023-10-18) .. before 9fb5db25555e (2024-02-29),,
+cpu_cva6/mmu_sv39/tlb.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/mmu_sv39/tlb.sv,commit 7cd183b710d1 (2023-10-18) .. before 9fb5db25555e (2024-02-29),,
+cpu_cva6/mult.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/mult.sv,commit 738d53af1c34 (2023-12-13) .. before f332688fc015 (2024-02-23),,
+cpu_cva6/multiplier.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/multiplier.sv,commit 3720295bd3b3 (2023-12-04) .. before 3afe870d78ab (2024-01-15),,
+cpu_cva6/package/acc_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/include/acc_pkg.sv,commit 513bb91f823a (2023-07-10) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/package/ariane_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/include/ariane_pkg.sv,commit 59177e37d336 (2024-01-08) .. before 3afe870d78ab (2024-01-15),,
+cpu_cva6/package/config_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/include/config_pkg.sv,commit c51819dcbdf3 (2023-12-04) .. before 3afe870d78ab (2024-01-15),,
+cpu_cva6/package/cv64a6_config_pkg.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+cpu_cva6/package/cvxif_instr_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/cvxif_example/include/cvxif_instr_pkg.sv,20240827.feature.interconnect..v5.1.0,,
+cpu_cva6/package/cvxif_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/include/cvxif_pkg.sv,commit 7cd183b710d1 (2023-10-18) .. before 987c645bb77f (2024-03-15),,
+cpu_cva6/package/fpnew_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/openhwgroup/cvfpu/src/fpnew_pkg.sv,v5.0.0..v5.0.1,,
+cpu_cva6/package/instr_tracer_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/include/instr_tracer_pkg.sv,20240827.feature.interconnect..v5.3.0,,
+cpu_cva6/package/riscv_pkg.sv,large,cva6,https://github.com/openhwgroup/cva6,core/include/riscv_pkg.sv,v5.0.0,76,adapted for the PKU_2602 SoC integration (76 differing lines against the upstream version)
+cpu_cva6/package/std_cache_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/include/std_cache_pkg.sv,commit a88385c4ceba (2023-12-01) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/package/wt_cache_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/include/wt_cache_pkg.sv,commit c51819dcbdf3 (2023-12-04) .. before 32a3cd56ee7f (2024-03-08),,
+cpu_cva6/perf_counters.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/perf_counters.sv,commit abf55c01af28 (2023-12-06) .. before c84f979a1556 (2024-02-21),,
+cpu_cva6/pmp/.gitignore,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+cpu_cva6/pmp/Bender.yml,identical,cva6,https://github.com/openhwgroup/cva6,core/pmp/Bender.yml,20240827.feature.interconnect..v5.3.0,,
+cpu_cva6/pmp/Makefile,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+cpu_cva6/pmp/README.md,large,cva6,https://github.com/openhwgroup/cva6,.gitlab-ci/README.md,v5.0.0,216,adapted for the PKU_2602 SoC integration (216 differing lines against the upstream version)
+cpu_cva6/pmp/formal.sby,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+cpu_cva6/pmp/src/pmp.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/pmp/src/pmp.sv,20240827.feature.interconnect..v5.1.0,,
+cpu_cva6/pmp/src/pmp_entry.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/pmp/src/pmp_entry.sv,20240827.feature.interconnect..v5.1.0,,
+cpu_cva6/pmp/tb/pmp_tb.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/pmp/tb/pmp_tb.sv,20240827.feature.interconnect..v5.3.0,,
+cpu_cva6/pmp/tb/tb_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/pmp/tb/tb_pkg.sv,20240827.feature.interconnect..v5.3.0,,
+cpu_cva6/scoreboard.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/scoreboard.sv,commit 738d53af1c34 (2023-12-13) .. before 0ce6b40b2658 (2024-01-18),,
+cpu_cva6/serdiv.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/serdiv.sv,commit 7cd183b710d1 (2023-10-18) .. before f332688fc015 (2024-02-23),,
+cpu_cva6/store_buffer.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/store_buffer.sv,commit 7cd183b710d1 (2023-10-18) .. before 0ce6b40b2658 (2024-01-18),,
+cpu_cva6/store_unit.sv,identical,cva6,https://github.com/openhwgroup/cva6,core/store_unit.sv,commit 738d53af1c34 (2023-12-13) .. before 0ce6b40b2658 (2024-01-18),,
+floo_noc/floo_axi_chimney.sv,medium,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_axi_chimney.sv,v0.6.0,30,adapted for the PKU_2602 SoC integration (30 differing lines against the upstream version)
+floo_noc/floo_axi_router.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_axi_router.sv,reduction-vc-rebase..v0.8.0,,
+floo_noc/floo_cdc.sv,small,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_cdc.sv,v0.6.0,6,include paths adapted to this source tree; assertion includes removed (6 differing lines against the upstream version)
+floo_noc/floo_cut.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_cut.sv,reduction-vc-rebase..v0.8.0,,
+floo_noc/floo_fifo.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_fifo.sv,reduction-vc-rebase..v0.8.0,,
+floo_noc/floo_meta_buffer.sv,medium,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_meta_buffer.sv,v0.6.0,15,adapted for the PKU_2602 SoC integration (15 differing lines against the upstream version)
+floo_noc/floo_nw_chimney.sv,large,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_nw_chimney.sv,v0.6.0,63,adapted for the PKU_2602 SoC integration (63 differing lines against the upstream version)
+floo_noc/floo_nw_join.sv,medium,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_nw_join.sv,v0.6.0,11,adapted for the PKU_2602 SoC integration (11 differing lines against the upstream version)
+floo_noc/floo_nw_router.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_nw_router.sv,v0.6.0..v0.6.1,,
+floo_noc/floo_nw_vc_chimney.sv,medium,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_nw_vc_chimney.sv,v0.6.0,50,adapted for the PKU_2602 SoC integration (50 differing lines against the upstream version)
+floo_noc/floo_nw_vc_router.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_nw_vc_router.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/floo_pkg.sv,medium,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_pkg.sv,v0.6.0,16,adapted for the PKU_2602 SoC integration (16 differing lines against the upstream version)
+floo_noc/floo_rob.sv,include-path,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_rob.sv,reduction-vc-rebase..v0.8.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+floo_noc/floo_rob_wrapper.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_rob_wrapper.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/floo_route_comp.sv,small,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_route_comp.sv,v0.6.0,3,include paths adapted to this source tree; assertion includes removed (3 differing lines against the upstream version)
+floo_noc/floo_route_select.sv,small,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_route_select.sv,v0.6.0,2,minor local edits (2 differing lines against the upstream version)
+floo_noc/floo_router.sv,medium,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_router.sv,v0.6.0,31,adapted for the PKU_2602 SoC integration (31 differing lines against the upstream version)
+floo_noc/floo_simple_rob.sv,small,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_simple_rob.sv,v0.6.0,4,include paths adapted to this source tree; assertion includes removed (4 differing lines against the upstream version)
+floo_noc/floo_vc_arbiter.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_vc_arbiter.sv,v0.5.0..v0.7.0,,
+floo_noc/floo_vc_router.sv,medium,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_vc_router.sv,v0.6.0,12,adapted for the PKU_2602 SoC integration (12 differing lines against the upstream version)
+floo_noc/floo_wormhole_arbiter.sv,include-path,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/floo_wormhole_arbiter.sv,v0.2.0..v0.6.1,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+floo_noc/tb/tb_floo_axi_chimney.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/tb/tb_floo_axi_chimney.sv,reduction-vc-rebase..v0.8.0,,
+floo_noc/tb/tb_floo_axi_mesh.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/tb/tb_floo_axi_mesh.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/tb/tb_floo_dma_chimney.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/tb/tb_floo_dma_chimney.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/tb/tb_floo_nw_chimney.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/tb/tb_floo_nw_chimney.sv,v0.6.0..v0.6.1,,
+floo_noc/tb/tb_floo_nw_mesh.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/tb/tb_floo_nw_mesh.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/tb/tb_floo_rob.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/tb/tb_floo_rob.sv,v0.6.0..v0.6.1,,
+floo_noc/tb/tb_floo_router.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/tb/tb_floo_router.sv,reduction-vc-rebase..v0.8.0,,
+floo_noc/tb/tb_floo_vc_router.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/tb/tb_floo_vc_router.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/tb/tb_mesh_3x3_id_system.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+floo_noc/tb/tb_mesh_3x3_system.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+floo_noc/tb/tb_star_3x3_system.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+floo_noc/tb/wave/tb_floo_axi_chimney.wave.tcl,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+floo_noc/tb/wave/tb_floo_axi_mesh.wave.tcl,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+floo_noc/tb/wave/tb_floo_nw_chimney.wave.tcl,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+floo_noc/tb/wave/tb_floo_nw_mesh.wave.tcl,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+floo_noc/tb/wave/tb_floo_rob.wave.tcl,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+floo_noc/tb/wave/wave.tcl,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+floo_noc/test/axi_aw_w_sync.sv,include-path,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/axi_aw_w_sync.sv,reduction-vc-rebase..v0.8.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+floo_noc/test/axi_bw_monitor.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/axi_bw_monitor.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/test/axi_reorder_compare.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/axi_reorder_compare.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/test/axi_reorder_remap_compare.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/axi_reorder_remap_compare.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/test/floo_axi_rand_slave.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/floo_axi_rand_slave.sv,v0.6.0..v0.6.1,,
+floo_noc/test/floo_axi_test_node.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/floo_axi_test_node.sv,v0.6.0..v0.6.1,,
+floo_noc/test/floo_dma_test_node.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/floo_dma_test_node.sv,v0.6.0..v0.6.1,,
+floo_noc/test/floo_hbm_model.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/floo_hbm_model.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/test/floo_test_pkg.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/floo_test_pkg.sv,v0.6.0..v0.6.1,,
+floo_noc/test/include/axi_print_txns.svh,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/include/axi_print_txns.svh,reduction-vc-rebase..v0.8.4,,
+floo_noc/test/include/tb_tasks.svh,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/test/include/tb_tasks.svh,reduction-vc-rebase..v0.8.4,,
+floo_noc/test/jobs/mesh_0.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_1.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_100.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_101.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_102.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_103.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_104.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_105.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_106.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_107.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_108.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_2.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_3.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_4.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_5.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_6.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_7.txt,project,,,,,,project file (project header)
+floo_noc/test/jobs/mesh_8.txt,project,,,,,,project file (project header)
+floo_noc/vc_router_util/floo_credit_counter.sv,include-path,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_credit_counter.sv,reduction-vc-rebase..v0.8.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+floo_noc/vc_router_util/floo_input_fifo.sv,small,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_input_fifo.sv,v0.6.0,9,include paths adapted to this source tree; assertion includes removed (9 differing lines against the upstream version)
+floo_noc/vc_router_util/floo_input_port.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_input_port.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/vc_router_util/floo_look_ahead_routing.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_look_ahead_routing.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/vc_router_util/floo_mux.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_mux.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/vc_router_util/floo_rr_arbiter.sv,include-path,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_rr_arbiter.sv,reduction-vc-rebase..v0.8.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+floo_noc/vc_router_util/floo_sa_global.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_sa_global.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/vc_router_util/floo_sa_local.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_sa_local.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/vc_router_util/floo_vc_assignment.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_vc_assignment.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/vc_router_util/floo_vc_router_switch.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_vc_router_switch.sv,reduction-vc-rebase..v0.8.4,,
+floo_noc/vc_router_util/floo_vc_selection.sv,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/vc_router_util/floo_vc_selection.sv,reduction-vc-rebase..v0.8.4,,
+idma/backend/.gitignore,unscanned,,,,,,"build, wave or ignore file without a source extension; not included in the content matching"
+idma/backend/idma_axi_read.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_axi_read.sv,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/backend/idma_axi_write.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_axi_write.sv,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/backend/idma_axil_read.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_axil_read.sv,picobello-tapeout..v0.6.5-src,,
+idma/backend/idma_axil_write.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_axil_write.sv,picobello-tapeout..v0.6.5-src,,
+idma/backend/idma_axis_read.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_axis_read.sv,v0.6.5..v0.6.5-src,,
+idma/backend/idma_axis_write.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_axis_write.sv,picobello-tapeout..v0.6.5-src,,
+idma/backend/idma_backend_rw_axi.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,target/rtl/idma_backend_rw_axi.sv,picobello-tapeout..v0.6.5,,
+idma/backend/idma_channel_coupler.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_channel_coupler.sv,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/backend/idma_dataflow_element.sv,small,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_dataflow_element.sv,v0.6.5,2,minor local edits (2 differing lines against the upstream version)
+idma/backend/idma_error_handler.sv,small,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_error_handler.sv,v0.6.5,3,include paths adapted to this source tree; assertion includes removed (3 differing lines against the upstream version)
+idma/backend/idma_init_read.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_init_read.sv,picobello-tapeout..v0.6.5-src,,
+idma/backend/idma_init_write.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_init_write.sv,picobello-tapeout..v0.6.5-src,,
+idma/backend/idma_legalizer_page_splitter.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_legalizer_page_splitter.sv,picobello-tapeout..v0.6.5-src,,
+idma/backend/idma_legalizer_pow2_splitter.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_legalizer_pow2_splitter.sv,picobello-tapeout..v0.7.0-src,,
+idma/backend/idma_legalizer_rw_axi.sv,medium,iDMA,https://github.com/pulp-platform/iDMA,target/rtl/idma_legalizer_rw_axi.sv,v0.6.5,11,adapted for the PKU_2602 SoC integration (11 differing lines against the upstream version)
+idma/backend/idma_obi_read.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_obi_read.sv,picobello-tapeout..v0.6.5-src,,
+idma/backend/idma_obi_write.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_obi_write.sv,picobello-tapeout..v0.6.5-src,,
+idma/backend/idma_tilelink_read.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_tilelink_read.sv,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/backend/idma_tilelink_write.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/backend/idma_tilelink_write.sv,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/backend/idma_transport_layer_rw_axi.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,target/rtl/idma_transport_layer_rw_axi.sv,picobello-tapeout..v0.6.5,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/backend/tpl/idma_backend.sv.tpl,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/tpl/idma_backend.sv.tpl,picobello-tapeout..v0.6.5-src,,
+idma/backend/tpl/idma_backend_synth.sv.tpl,identical,iDMA,https://github.com/pulp-platform/iDMA,src/backend/tpl/idma_backend_synth.sv.tpl,picobello-tapeout..v0.6.5-src,,
+idma/backend/tpl/idma_legalizer.sv.tpl,small,iDMA,https://github.com/pulp-platform/iDMA,src/backend/tpl/idma_legalizer.sv.tpl,v0.6.5,2,include paths adapted to this source tree; assertion includes removed (2 differing lines against the upstream version)
+idma/backend/tpl/idma_transport_layer.sv.tpl,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/backend/tpl/idma_transport_layer.sv.tpl,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/frontend/idma_inst64_events.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/frontend/inst64/idma_inst64_events.sv,picobello-tapeout..v0.6.5-src,,
+idma/frontend/idma_inst64_snitch_pkg.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/frontend/inst64/idma_inst64_snitch_pkg.sv,picobello-tapeout..v0.6.5-src,,
+idma/frontend/idma_inst64_top.sv,medium,iDMA,https://github.com/pulp-platform/iDMA,src/frontend/inst64/idma_inst64_top.sv,v0.6.5,33,adapted for the PKU_2602 SoC integration (33 differing lines against the upstream version)
+idma/frontend/idma_reg64_1d.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,target/rtl/idma_reg64_1d_top.sv,picobello-tapeout..v0.6.5,,
+idma/frontend/idma_reg64_1d_reg_pkg.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,target/rtl/idma_reg64_1d_reg_pkg.sv,picobello-tapeout..v0.6.5,,
+idma/frontend/idma_reg64_1d_reg_top.sv,small,iDMA,https://github.com/pulp-platform/iDMA,target/rtl/idma_reg64_1d_reg_top.sv,v0.6.5,10,include paths adapted to this source tree; assertion includes removed (10 differing lines against the upstream version)
+idma/frontend/idma_transfer_id_gen.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/frontend/idma_transfer_id_gen.sv,picobello-tapeout..v0.7.0-src,,
+idma/idma_frontend.sv,project,,,,,,project file (project header)
+idma/idma_pkg.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/idma_pkg.sv,picobello-tapeout..v0.6.5-src,,
+idma/idma_top.sv,project,,,,,,project file (project header)
+idma/midend/idma_mp_dist_midend.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_mp_dist_midend.sv,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/midend/idma_mp_midend_synth.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_mp_midend_synth.sv,picobello-tapeout..v0.7.0-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/midend/idma_mp_midend_synth_pkg.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_mp_midend_synth_pkg.sv,picobello-tapeout..v0.7.0-src,,
+idma/midend/idma_mp_split_midend.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_mp_split_midend.sv,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/midend/idma_nd_midend.sv,include-path,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_nd_midend.sv,picobello-tapeout..v0.6.5-src,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+idma/midend/idma_nd_midend_synth.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_nd_midend_synth.sv,picobello-tapeout..v0.6.5-src,,
+idma/midend/idma_rt_midend.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_rt_midend.sv,picobello-tapeout..v0.6.5-src,,
+idma/midend/idma_rt_midend_synth.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_rt_midend_synth.sv,picobello-tapeout..v0.7.0-src,,
+idma/midend/idma_rt_midend_synth_pkg.sv,identical,iDMA,https://github.com/pulp-platform/iDMA,src/midend/idma_rt_midend_synth_pkg.sv,picobello-tapeout..v0.7.0-src,,
+include/apb/assign.svh,identical,apb,https://github.com/pulp-platform/apb,include/apb/assign.svh,v0.2.1..v0.2.4,,
+include/apb/typedef.svh,medium,apb,https://github.com/pulp-platform/apb,include/apb/typedef.svh,v0.2.1,14,adapted for the PKU_2602 SoC integration (14 differing lines against the upstream version)
+include/axi/assign.svh,identical,axi,https://github.com/pulp-platform/axi,include/axi/assign.svh,picobello-tapeout..yanked-v0.39.4,,
+include/axi/typedef.svh,small,axi,https://github.com/pulp-platform/axi,include/axi/typedef.svh,v0.39.3,2,minor local edits (2 differing lines against the upstream version)
+include/axi_llc/assign.svh,identical,axi_llc,https://github.com/pulp-platform/axi_llc,include/axi_llc/assign.svh,v0.2.1..v0.3.0,,
+include/axi_llc/typedef.svh,identical,axi_llc,https://github.com/pulp-platform/axi_llc,include/axi_llc/typedef.svh,v0.2.1..v0.3.0,,
+include/axi_stream/assign.svh,identical,axi_stream,https://github.com/pulp-platform/axi_stream,include/axi_stream/assign.svh,v0.1.0..v0.1.1,,
+include/axi_stream/typedef.svh,identical,axi_stream,https://github.com/pulp-platform/axi_stream,include/axi_stream/typedef.svh,v0.1.0..v0.1.1,,
+include/floo_noc/typedef.svh,identical,FlooNoC,https://github.com/pulp-platform/FlooNoC,hw/include/floo_noc/typedef.svh,v0.6.0..v0.6.1,,
+include/idma/guard.svh,identical,iDMA,https://github.com/pulp-platform/iDMA,src/include/idma/guard.svh,picobello-tapeout..v0.7.0-src,,
+include/idma/typedef.svh,identical,iDMA,https://github.com/pulp-platform/iDMA,src/include/idma/typedef.svh,picobello-tapeout..v0.6.5-src,,
+include/misc_common/registers.svh,identical,common_cells,https://github.com/pulp-platform/common_cells,include/common_cells/registers.svh,v1.22.0..v1.28.0,,
+include/reg/assign.svh,identical,register_interface,https://github.com/pulp-platform/register_interface,include/register_interface/assign.svh,v0.2.0..v0.3.7,,
+include/reg/typedef.svh,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/include/register_interface/typedef.svh,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/addr_decode.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/addr_decode.sv,v1.32.0..v1.38.0,,
+misc_common/addr_decode_dync.sv,small,common_cells,https://github.com/pulp-platform/common_cells,src/addr_decode_dync.sv,v1.32.0,8,assertion includes removed (8 differing lines against the upstream version)
+misc_common/addr_decode_napot.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/addr_decode_napot.sv,v1.32.0..v1.40.0,,
+misc_common/binary_to_gray.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/binary_to_gray.sv,v1.20.0..v1.40.0,,
+misc_common/cb_filter.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/cb_filter.sv,v1.20.0..v1.28.0,,
+misc_common/cb_filter_pkg.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/cb_filter_pkg.sv,v1.20.0..v1.40.0,,
+misc_common/cc_onehot.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/cc_onehot.sv,v1.23.0..v1.40.0,,
+misc_common/cdc_2phase.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/cdc_2phase.sv,v1.24.0..v1.37.0,,
+misc_common/cdc_2phase_clearable.sv,medium,common_cells,https://github.com/pulp-platform/common_cells,src/cdc_2phase_clearable.sv,v1.32.0,12,adapted for the PKU_2602 SoC integration (12 differing lines against the upstream version)
+misc_common/cdc_4phase.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/cdc_4phase.sv,v1.24.0..v1.40.0,,
+misc_common/cdc_fifo_2phase.sv,small,common_cells,https://github.com/pulp-platform/common_cells,src/cdc_fifo_2phase.sv,v1.32.0,6,minor local edits (6 differing lines against the upstream version)
+misc_common/cdc_fifo_gray.sv,small,common_cells,https://github.com/pulp-platform/common_cells,src/cdc_fifo_gray.sv,v1.32.0,4,assertion includes removed (4 differing lines against the upstream version)
+misc_common/cdc_fifo_gray_clearable.sv,small,common_cells,https://github.com/pulp-platform/common_cells,src/cdc_fifo_gray_clearable.sv,v1.32.0,4,assertion includes removed (4 differing lines against the upstream version)
+misc_common/cdc_reset_ctrlr.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/cdc_reset_ctrlr.sv,v1.28.0..v1.40.0,,
+misc_common/cdc_reset_ctrlr_pkg.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/cdc_reset_ctrlr_pkg.sv,v1.24.0..v1.40.0,,
+misc_common/cf_math_pkg.sv,medium,common_cells,https://github.com/pulp-platform/common_cells,src/cf_math_pkg.sv,v1.32.0,41,adapted for the PKU_2602 SoC integration (41 differing lines against the upstream version)
+misc_common/clk_div.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/clk_div.sv,v1.20.0..v1.23.0,,
+misc_common/clk_int_div.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/clk_int_div.sv,v1.30.0..v1.39.0,,
+misc_common/clk_int_div_static.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/clk_int_div_static.sv,v1.30.0..v1.40.0,,
+misc_common/clk_mux_glitch_free.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/clk_mux_glitch_free.sv,v1.30.0..v1.40.0,,
+misc_common/cluster_clk_cells.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/pulp-platform/tech_cells_generic/src/deprecated/cluster_clk_cells.sv,20240827.feature.interconnect..v5.3.0,,
+misc_common/counter.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/counter.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/delta_counter.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/delta_counter.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/ecc_decode.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/ecc_decode.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/ecc_encode.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/ecc_encode.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/ecc_pkg.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/ecc_pkg.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/edge_detect.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/edge_detect.sv,v1.20.0..v1.40.0,,
+misc_common/edge_propagator.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/edge_propagator.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/edge_propagator_rx.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/edge_propagator_rx.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/edge_propagator_tx.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/edge_propagator_tx.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/exp_backoff.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/exp_backoff.sv,v1.20.0..v1.32.0,,
+misc_common/fall_through_register.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/fall_through_register.sv,v1.27.1..v1.37.0,,
+misc_common/fifo_v1.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/deprecated/fifo_v1.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/fifo_v2.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/deprecated/fifo_v2.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/fifo_v3.sv,medium,common_cells,https://github.com/pulp-platform/common_cells,src/fifo_v3.sv,v1.32.0,15,adapted for the PKU_2602 SoC integration (15 differing lines against the upstream version)
+misc_common/gray_to_binary.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/gray_to_binary.sv,v1.20.0..v1.40.0,,
+misc_common/id_queue.sv,small,common_cells,https://github.com/pulp-platform/common_cells,src/id_queue.sv,v1.32.0,10,minor local edits (10 differing lines against the upstream version)
+misc_common/isochronous_4phase_handshake.sv,include-path,common_cells,https://github.com/pulp-platform/common_cells,src/isochronous_4phase_handshake.sv,v1.23.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+misc_common/isochronous_spill_register.sv,include-path,common_cells,https://github.com/pulp-platform/common_cells,src/isochronous_spill_register.sv,v1.23.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+misc_common/lfsr.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/lfsr.sv,v1.20.0..v1.28.0,,
+misc_common/lfsr_16bit.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/lfsr_16bit.sv,v1.20.0..v1.28.0,,
+misc_common/lfsr_8bit.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/lfsr_8bit.sv,v1.20.0..v1.28.0,,
+misc_common/lossy_valid_to_stream.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/lossy_valid_to_stream.sv,v1.30.0..v1.37.0,,
+misc_common/lzc.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/lzc.sv,v1.20.0..v1.23.0,,
+misc_common/max_counter.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/max_counter.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/mem_to_banks.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/mem_to_banks.sv,v1.32.0..v1.40.0,,
+misc_common/mem_to_banks_detailed.sv,small,common_cells,https://github.com/pulp-platform/common_cells,src/mem_to_banks_detailed.sv,v1.32.0,4,assertion includes removed (4 differing lines against the upstream version)
+misc_common/multiaddr_decode.sv,small,common_cells,https://github.com/pulp-platform/common_cells,src/multiaddr_decode.sv,v1.32.0,8,assertion includes removed (8 differing lines against the upstream version)
+misc_common/mv_filter.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/mv_filter.sv,v1.20.0..v1.40.0,,
+misc_common/onehot_to_bin.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/onehot_to_bin.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/passthrough_stream_fifo.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+misc_common/plru_tree.sv,medium,common_cells,https://github.com/pulp-platform/common_cells,src/plru_tree.sv,v1.32.0,33,adapted for the PKU_2602 SoC integration (33 differing lines against the upstream version)
+misc_common/popcount.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/popcount.sv,v1.30.0..v1.40.0,,
+misc_common/pulp_clk_cells.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/pulp-platform/tech_cells_generic/src/deprecated/pulp_clk_cells.sv,20240827.feature.interconnect..v5.3.0,,
+misc_common/read.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/read.sv,v1.27.0..v1.40.0,,
+misc_common/rr_arb_tree.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/rr_arb_tree.sv,v1.22.0..v1.32.0,,
+misc_common/rstgen.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/rstgen.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/rstgen_bypass.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/rstgen_bypass.sv,v1.30.0..v1.32.0,,
+misc_common/serial_deglitch.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/serial_deglitch.sv,v1.20.0..v1.40.0,,
+misc_common/shift_reg.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/shift_reg.sv,v1.20.0..v1.28.0,,
+misc_common/shift_reg_gated.sv,include-path,common_cells,https://github.com/pulp-platform/common_cells,src/shift_reg_gated.sv,v1.29.0..v1.37.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+misc_common/spill_register.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/spill_register.sv,v1.22.1..v1.40.0,,
+misc_common/spill_register_flushable.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/spill_register_flushable.sv,v1.22.0..v1.32.0,,
+misc_common/sram.sv,identical,cva6,https://github.com/openhwgroup/cva6,common/local/util/sram.sv,v5.0.0..v5.0.1,,
+misc_common/stream_arbiter.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/stream_arbiter.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/stream_arbiter_flushable.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_arbiter_flushable.sv,v1.19.0..v1.32.0,,
+misc_common/stream_delay.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_delay.sv,v1.30.0..v1.40.0,,
+misc_common/stream_demux.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_demux.sv,v1.19.0..v1.40.0,,
+misc_common/stream_fifo.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/stream_fifo.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/stream_fifo_optimal_wrap.sv,medium,common_cells,https://github.com/pulp-platform/common_cells,src/stream_fifo_optimal_wrap.sv,v1.32.0,16,adapted for the PKU_2602 SoC integration (16 differing lines against the upstream version)
+misc_common/stream_filter.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/stream_filter.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/stream_fork.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_fork.sv,v1.22.0..v1.32.0,,
+misc_common/stream_fork_dynamic.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/stream_fork_dynamic.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/stream_intf.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_intf.sv,v1.19.0..v1.32.0,,
+misc_common/stream_join.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_join.sv,v1.32.0..v1.40.0,,
+misc_common/stream_join_dynamic.sv,small,common_cells,https://github.com/pulp-platform/common_cells,src/stream_join_dynamic.sv,v1.32.0,3,assertion includes removed (3 differing lines against the upstream version)
+misc_common/stream_mux.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_mux.sv,v1.22.0..v1.32.0,,
+misc_common/stream_omega_net.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_omega_net.sv,v1.20.0..v1.32.0,,
+misc_common/stream_register.sv,include-path,common_cells,https://github.com/pulp-platform/common_cells,src/stream_register.sv,v1.25.0..v1.37.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+misc_common/stream_throttle.sv,include-path,common_cells,https://github.com/pulp-platform/common_cells,src/stream_throttle.sv,v1.26.0..v1.40.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+misc_common/stream_to_mem.sv,include-path,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/stream_to_mem.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+misc_common/stream_xbar.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/stream_xbar.sv,v1.20.0..v1.28.0,,
+misc_common/sub_per_hash.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/sub_per_hash.sv,v1.24.0..v1.40.0,,
+misc_common/sync.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/sync.sv,v1.23.0,,
+misc_common/sync_wedge.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/pulp_common_cells/src/sync_wedge.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+misc_common/tc_pwr.sv,identical,cva6,https://github.com/openhwgroup/cva6,vendor/pulp-platform/tech_cells_generic/src/tc_pwr.sv,20240827.feature.interconnect..v5.3.0,,
+misc_common/tc_sram.sv,medium,tech_cells_generic,https://github.com/pulp-platform/tech_cells_generic,src/rtl/tc_sram.sv,v0.2.10,14,adapted for the PKU_2602 SoC integration (14 differing lines against the upstream version)
+misc_common/tc_sram_impl.sv,identical,tech_cells_generic,https://github.com/pulp-platform/tech_cells_generic,src/rtl/tc_sram_impl.sv,v0.2.10..v0.2.14,,
+misc_common/tc_sram_wrapper.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+misc_common/unread.sv,identical,common_cells,https://github.com/pulp-platform/common_cells,src/unread.sv,v1.31.0..v1.40.0,,
+soc_axi/apb_timer/README.md,identical,apb_timer,https://github.com/pulp-platform/apb_timer,README.md,Pulpino_v2.1..v0.1.0,,
+soc_axi/apb_timer/apb_timer.sv,identical,apb_timer,https://github.com/pulp-platform/apb_timer,src/apb_timer.sv,v0.1.0,,
+soc_axi/apb_timer/timer.sv,identical,apb_timer,https://github.com/pulp-platform/apb_timer,timer.sv,Pulpino_v2.1..v0.1.0,,
+soc_axi/apb_uart/CHANGELOG.md,identical,apb_uart,https://github.com/pulp-platform/apb_uart,CHANGELOG.md,master..v0.2.1,,
+soc_axi/apb_uart/apb_uart.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/apb_uart.sv,master..v0.2.1,,
+soc_axi/apb_uart/slib_clock_div.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/slib_clock_div.sv,master..v0.2.1,,
+soc_axi/apb_uart/slib_counter.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/slib_counter.sv,master..v0.2.1,,
+soc_axi/apb_uart/slib_edge_detect.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/slib_edge_detect.sv,master..v0.2.1,,
+soc_axi/apb_uart/slib_fifo.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/slib_fifo.sv,master..v0.2.1,,
+soc_axi/apb_uart/slib_input_filter.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/slib_input_filter.sv,master..v0.2.1,,
+soc_axi/apb_uart/slib_input_sync.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/slib_input_sync.sv,master..v0.2.1,,
+soc_axi/apb_uart/slib_mv_filter.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/slib_mv_filter.sv,master..v0.2.1,,
+soc_axi/apb_uart/uart_baudgen.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/uart_baudgen.sv,master..v0.2.1,,
+soc_axi/apb_uart/uart_interrupt.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/uart_interrupt.sv,master..v0.2.1,,
+soc_axi/apb_uart/uart_receiver.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/uart_receiver.sv,master..v0.2.1,,
+soc_axi/apb_uart/uart_transmitter.sv,identical,apb_uart,https://github.com/pulp-platform/apb_uart,src/uart_transmitter.sv,master..v0.2.1,,
+soc_axi/axi_bus/ariane_axi_pkg.sv,identical,cva6,https://github.com/openhwgroup/cva6,corev_apu/tb/ariane_axi_pkg.sv,20240827.feature.interconnect..v5.3.0,,
+soc_axi/axi_bus/axi_atop_filter.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_atop_filter.sv,archive/2022-05-24_axi_llc_rebase..v0.39.3,,
+soc_axi/axi_bus/axi_burst_splitter.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_burst_splitter.sv,commit 4f44cf357725 (2025-05-31),,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_bus_compare.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_bus_compare.sv,archive/2023-07-25_axi_rt-tbenz..v0.39.3,,
+soc_axi/axi_bus/axi_cdc.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_cdc.sv,picobello-multicast..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_cdc_dst.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_cdc_dst.sv,picobello-multicast..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_cdc_src.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_cdc_src.sv,picobello-multicast..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_cut.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_cut.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_delayer.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_delayer.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_demux.sv,small,axi,https://github.com/pulp-platform/axi,src/axi_demux.sv,v0.39.3,1,include paths adapted to this source tree; assertion includes removed (1 differing lines against the upstream version)
+soc_axi/axi_bus/axi_demux_simple.sv,small,axi,https://github.com/pulp-platform/axi,src/axi_demux_simple.sv,v0.39.3,2,include paths adapted to this source tree; assertion includes removed (2 differing lines against the upstream version)
+soc_axi/axi_bus/axi_dw_converter.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_dw_converter.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_dw_downsizer.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_dw_downsizer.sv,archive/2023-07-25_axi_rt-tbenz..v0.39.3,,
+soc_axi/axi_bus/axi_dw_upsizer.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_dw_upsizer.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_err_slv.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_err_slv.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_fifo.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_fifo.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_id_prepend.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_id_prepend.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_id_remap.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_id_remap.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_id_serialize.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_id_serialize.sv,picobello-tapeout..v0.39.5,,
+soc_axi/axi_bus/axi_interleaved_xbar.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_interleaved_xbar.sv,v0.39.2..v0.39.3,,
+soc_axi/axi_bus/axi_intf.sv,large,axi,https://github.com/pulp-platform/axi,src/axi_intf.sv,v0.39.3,719,adapted for the PKU_2602 SoC integration (719 differing lines against the upstream version)
+soc_axi/axi_bus/axi_isolate.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_isolate.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_iw_converter.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_iw_converter.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_join.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_join.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_lfsr.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_lfsr.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_lite_demux.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_lite_demux.sv,v0.30.0..v0.31.1,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_lite_dw_converter.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_lite_dw_converter.sv,picobello-multicast..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_lite_from_mem.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_lite_from_mem.sv,picobello-tapeout..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_lite_interface.sv,identical,cva6,https://github.com/openhwgroup/cva6,corev_apu/clint/axi_lite_interface.sv,20240827.feature.interconnect..v5.3.0,,
+soc_axi/axi_bus/axi_lite_join.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_lite_join.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_lite_lfsr.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_lite_lfsr.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_lite_mailbox.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_lite_mailbox.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_lite_mux.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_lite_mux.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_lite_regs.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_lite_regs.sv,archive/2022-08-05_axi_to_mem_rebase..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_lite_xbar.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_lite_xbar.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_modify_address.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_modify_address.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_multicut.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_multicut.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_mux.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_mux.sv,commit 2f56e30e9725 (2022-03-30) .. before b91f44080ffb (2022-03-30),,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_pkg.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_pkg.sv,v0.39.3..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_res_tbl.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_res_tbl.sv,v0.3.0..v0.8.2,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_riscv_amos.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_riscv_amos.sv,v0.4.0..v0.8.3,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_riscv_amos_alu.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_riscv_amos_alu.sv,v0.1.0..v0.8.3,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_riscv_amos_wrap.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_riscv_amos_wrap.sv,v0.3.0..v0.8.3,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_riscv_atomics.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_riscv_atomics.sv,v0.8.0..v0.8.2,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_riscv_atomics_structs.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_riscv_atomics_structs.sv,v0.8.0..v0.8.2,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_riscv_atomics_wrap.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_riscv_atomics_wrap.sv,v0.8.0..v0.8.2,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_riscv_lrsc.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_riscv_lrsc.sv,v0.8.2,,
+soc_axi/axi_bus/axi_riscv_atomics/axi_riscv_lrsc_wrap.sv,identical,axi_riscv_atomics,https://github.com/pulp-platform/axi_riscv_atomics,src/axi_riscv_lrsc_wrap.sv,v0.8.0..v0.8.2,,
+soc_axi/axi_bus/axi_rw_join.sv,small,axi,https://github.com/pulp-platform/axi,src/axi_rw_join.sv,v0.39.3,8,include paths adapted to this source tree; assertion includes removed (8 differing lines against the upstream version)
+soc_axi/axi_bus/axi_rw_split.sv,small,axi,https://github.com/pulp-platform/axi,src/axi_rw_split.sv,v0.39.3,7,include paths adapted to this source tree; assertion includes removed (7 differing lines against the upstream version)
+soc_axi/axi_bus/axi_serializer.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_serializer.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_bus/axi_sim_mem.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_sim_mem.sv,v0.39.3,,
+soc_axi/axi_bus/axi_slave_compare.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_slave_compare.sv,archive/2023-07-25_axi_rt-tbenz..v0.39.3,,
+soc_axi/axi_bus/axi_slice/README.md,identical,axi_slice,https://github.com/pulp-platform/axi_slice,README.md,Pulpino_v2.1..v1.1.4,,
+soc_axi/axi_bus/axi_slice/axi_ar_buffer.sv,identical,axi_slice,https://github.com/pulp-platform/axi_slice,src/axi_ar_buffer.sv,v1.1.2..v1.1.4,,
+soc_axi/axi_bus/axi_slice/axi_aw_buffer.sv,identical,axi_slice,https://github.com/pulp-platform/axi_slice,src/axi_aw_buffer.sv,v1.1.2..v1.1.4,,
+soc_axi/axi_bus/axi_slice/axi_b_buffer.sv,identical,axi_slice,https://github.com/pulp-platform/axi_slice,src/axi_b_buffer.sv,v1.1.2..v1.1.4,,
+soc_axi/axi_bus/axi_slice/axi_r_buffer.sv,identical,axi_slice,https://github.com/pulp-platform/axi_slice,src/axi_r_buffer.sv,v1.1.2..v1.1.4,,
+soc_axi/axi_bus/axi_slice/axi_single_slice.sv,identical,axi_slice,https://github.com/pulp-platform/axi_slice,src/axi_single_slice.sv,v1.1.4,,
+soc_axi/axi_bus/axi_slice/axi_slice.sv,identical,axi_slice,https://github.com/pulp-platform/axi_slice,src/axi_slice.sv,v1.1.1..v1.1.4,,
+soc_axi/axi_bus/axi_slice/axi_slice_wrap.sv,identical,axi_slice,https://github.com/pulp-platform/axi_slice,src/axi_slice_wrap.sv,pulpissimo-v1.0..v1.1.4,,
+soc_axi/axi_bus/axi_slice/axi_w_buffer.sv,identical,axi_slice,https://github.com/pulp-platform/axi_slice,src/axi_w_buffer.sv,v1.1.2..v1.1.4,,
+soc_axi/axi_bus/axi_test.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_test.sv,v0.29.2..v0.31.0,,
+soc_axi/axi_bus/axi_throttle.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_throttle.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,
+soc_axi/axi_bus/axi_xbar.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_xbar.sv,archive/2023-07-25_axi_rt-tbenz..v0.39.3,,
+soc_axi/axi_bus/axi_xp.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_xp.sv,archive/2023-07-25_axi_rt-tbenz..yanked-v0.39.4,,
+soc_axi/axi_llc/axi_llc.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/axi_llc/axi_llc_burst_cutter.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_burst_cutter.sv,v0.1.0..v0.3.0,,
+soc_axi/axi_llc/axi_llc_chan_splitter.sv,include-path,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_chan_splitter.sv,v0.1.0..v0.3.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_llc/axi_llc_config.sv,medium,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_config.sv,v0.2.2,28,adapted for the PKU_2602 SoC integration (28 differing lines against the upstream version)
+soc_axi/axi_llc/axi_llc_data_way.sv,medium,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_data_way.sv,v0.2.2,53,adapted for the PKU_2602 SoC integration (53 differing lines against the upstream version)
+soc_axi/axi_llc/axi_llc_evict_unit.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_evict_unit.sv,v0.1.0..v0.3.0,,
+soc_axi/axi_llc/axi_llc_hit_miss.sv,include-path,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_hit_miss.sv,v0.2.2,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_llc/axi_llc_merge_unit.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_merge_unit.sv,v0.1.0..v0.3.0,,
+soc_axi/axi_llc/axi_llc_pkg.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_pkg.sv,v0.2.1..v0.2.2,,
+soc_axi/axi_llc/axi_llc_read_unit.sv,small,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_read_unit.sv,v0.2.2,2,minor local edits (2 differing lines against the upstream version)
+soc_axi/axi_llc/axi_llc_refill_unit.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_refill_unit.sv,v0.1.0..v0.3.0,,
+soc_axi/axi_llc/axi_llc_reg.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/axi_llc/axi_llc_reg_pkg.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_reg_pkg.sv,v0.2.1..v0.3.0,,
+soc_axi/axi_llc/axi_llc_reg_wrap.sv,small,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_reg_wrap.sv,v0.2.2,6,minor local edits (6 differing lines against the upstream version)
+soc_axi/axi_llc/axi_llc_top.sv,large,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_top.sv,v0.2.2,1146,adapted for the PKU_2602 SoC integration (1146 differing lines against the upstream version)
+soc_axi/axi_llc/axi_llc_ways.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_ways.sv,v0.2.1..v0.3.0,,
+soc_axi/axi_llc/axi_llc_write_unit.sv,small,axi_llc,https://github.com/pulp-platform/axi_llc,src/axi_llc_write_unit.sv,v0.2.2,2,minor local edits (2 differing lines against the upstream version)
+soc_axi/axi_llc/eviction_refill/axi_llc_ax_master.sv,small,axi_llc,https://github.com/pulp-platform/axi_llc,src/eviction_refill/axi_llc_ax_master.sv,v0.2.2,1,minor local edits (1 differing lines against the upstream version)
+soc_axi/axi_llc/eviction_refill/axi_llc_r_master.sv,small,axi_llc,https://github.com/pulp-platform/axi_llc,src/eviction_refill/axi_llc_r_master.sv,v0.2.2,2,minor local edits (2 differing lines against the upstream version)
+soc_axi/axi_llc/eviction_refill/axi_llc_w_master.sv,include-path,axi_llc,https://github.com/pulp-platform/axi_llc,src/eviction_refill/axi_llc_w_master.sv,v0.1.0..v0.3.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_llc/hit_miss_detect/axi_llc_evict_box.sv,include-path,axi_llc,https://github.com/pulp-platform/axi_llc,src/hit_miss_detect/axi_llc_evict_box.sv,v0.1.0..v0.3.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_llc/hit_miss_detect/axi_llc_lock_box_bloom.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/hit_miss_detect/axi_llc_lock_box_bloom.sv,v0.1.0..v0.3.0,,
+soc_axi/axi_llc/hit_miss_detect/axi_llc_miss_counters.sv,identical,axi_llc,https://github.com/pulp-platform/axi_llc,src/hit_miss_detect/axi_llc_miss_counters.sv,v0.1.0..v0.2.2,,
+soc_axi/axi_llc/hit_miss_detect/axi_llc_tag_pattern_gen.sv,include-path,axi_llc,https://github.com/pulp-platform/axi_llc,src/hit_miss_detect/axi_llc_tag_pattern_gen.sv,v0.2.1..v0.3.0,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/axi_llc/hit_miss_detect/axi_llc_tag_store.sv,large,axi_llc,https://github.com/pulp-platform/axi_llc,src/hit_miss_detect/axi_llc_tag_store.sv,v0.2.2,61,adapted for the PKU_2602 SoC integration (61 differing lines against the upstream version)
+soc_axi/axi_llc/spec/LLCcfg_spec.md,project,,,,,,project file (project header)
+soc_axi/axi_llc/spec/soc_llc_architecture.md,project,,,,,,project file (project header)
+soc_axi/bootrom.sv,large,cheshire,https://github.com/pulp-platform/cheshire,target/sim/src/dpi/bootrom.sv,branch zx/c910,1110,adapted for the PKU_2602 SoC integration (1110 differing lines against the upstream version)
+soc_axi/bus_converter/apb_to_reg.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/apb_to_reg.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/bus_converter/axi2apb.sv,identical,axi2apb,https://github.com/pulp-platform/axi2apb,src/axi2apb.sv,v0.0.1..v0.1.2,,
+soc_axi/bus_converter/axi2apb_64_32.sv,identical,axi2apb,https://github.com/pulp-platform/axi2apb,src/axi2apb_64_32.sv,v0.1.0..v0.1.1,,
+soc_axi/bus_converter/axi2apb_wrap.sv,medium,axi2apb,https://github.com/pulp-platform/axi2apb,src/axi2apb_wrap.sv,v0.1.0,57,adapted for the PKU_2602 SoC integration (57 differing lines against the upstream version)
+soc_axi/bus_converter/axi2mem.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/bus_converter/axi_from_mem.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_from_mem.sv,picobello-multicast..yanked-v0.39.4,,
+soc_axi/bus_converter/axi_lite_to_apb.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_lite_to_apb.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/bus_converter/axi_lite_to_axi.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_lite_to_axi.sv,archive/2022-05-24_axi_llc_rebase..yanked-v0.39.4,,
+soc_axi/bus_converter/axi_lite_to_reg.sv,small,register_interface,https://github.com/pulp-platform/register_interface,src/axi_lite_to_reg.sv,v0.4.1,4,include paths adapted to this source tree (4 differing lines against the upstream version)
+soc_axi/bus_converter/axi_to_axi_lite.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_to_axi_lite.sv,picobello-multicast..yanked-v0.39.4,,
+soc_axi/bus_converter/axi_to_detailed_mem.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_to_detailed_mem.sv,v0.39.2..v0.39.3,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/bus_converter/axi_to_mem.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_to_mem.sv,picobello-multicast..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/bus_converter/axi_to_mem_banked.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_to_mem_banked.sv,picobello-multicast..yanked-v0.39.4,,
+soc_axi/bus_converter/axi_to_mem_interleaved.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_to_mem_interleaved.sv,picobello-tapeout..yanked-v0.39.4,,
+soc_axi/bus_converter/axi_to_mem_split.sv,identical,axi,https://github.com/pulp-platform/axi,src/axi_to_mem_split.sv,picobello-multicast..yanked-v0.39.4,,
+soc_axi/bus_converter/axi_to_reg.sv,identical,register_interface,https://github.com/pulp-platform/register_interface,src/axi_to_reg.sv,v0.2.0..v0.4.1,,
+soc_axi/bus_converter/axi_to_reg_v2.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/bus_converter/axi_zero_mem.sv,include-path,axi,https://github.com/pulp-platform/axi,src/axi_zero_mem.sv,picobello-multicast..yanked-v0.39.4,,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/bus_converter/periph_to_reg.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/periph_to_reg.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/bus_converter/reg_to_apb.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_to_apb.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/bus_converter/reg_to_axi.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/bus_converter/reg_to_mem.sv,include-path,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_to_mem.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,include paths adapted to the flat source tree of this project (common_cells -> misc_common)
+soc_axi/bus_converter/reg_to_tlul.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_to_tlul.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/clint.sv,identical,cva6,https://github.com/openhwgroup/cva6,corev_apu/clint/clint.sv,commit 741e82133d8e (2022-02-06) .. before bd4b57cc64b0 (2024-03-18),,
+soc_axi/clk/dco_regs.sv,project,,,,,,project file (project header)
+soc_axi/clk/tb/dco_axi_tb.sv,project,,,,,,project file (project header)
+soc_axi/clk/tb/dco_clock_tb.sv,project,,,,,,project file (project header)
+soc_axi/clk/tb/dco_regs_tb.sv,project,,,,,,project file (project header)
+soc_axi/main_mem/main_mem_wrapper.sv,project,,,,,,project file (project header)
+soc_axi/peripheral.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/reg_bus/lowrisc/prim_subreg.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/lowrisc_opentitan/src/prim_subreg.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/lowrisc/prim_subreg_arb.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/lowrisc_opentitan/src/prim_subreg_arb.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/lowrisc/prim_subreg_ext.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/lowrisc_opentitan/src/prim_subreg_ext.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/lowrisc/prim_subreg_shadow.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/vendor/lowrisc_opentitan/src/prim_subreg_shadow.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/pulp/reg_cdc.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_cdc.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/pulp/reg_cut.sv,small,register_interface,https://github.com/pulp-platform/register_interface,src/reg_cut.sv,v0.4.1,2,include paths adapted to this source tree (2 differing lines against the upstream version)
+soc_axi/reg_bus/pulp/reg_demux.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_demux.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/pulp/reg_err_slv.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_err_slv.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/pulp/reg_filter_empty_writes.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_filter_empty_writes.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/pulp/reg_intf.sv,small,register_interface,https://github.com/pulp-platform/register_interface,src/reg_intf.sv,v0.4.1,2,minor local edits (2 differing lines against the upstream version)
+soc_axi/reg_bus/pulp/reg_mux.sv,small,register_interface,https://github.com/pulp-platform/register_interface,src/reg_mux.sv,v0.4.1,2,include paths adapted to this source tree (2 differing lines against the upstream version)
+soc_axi/reg_bus/pulp/reg_test.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_test.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/reg_bus/pulp/reg_uniform.sv,identical,cheshire,https://github.com/pulp-platform/cheshire,vendor/pulp_register_interface/src/reg_uniform.sv,commit c4b290d06f54 (2023-12-13) .. before 27767a8a0297 (2025-03-13),,
+soc_axi/riscv-dbg/README.md,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,README.md,v0.4..v0.8.1,,
+soc_axi/riscv-dbg/debug_rom.sv,large,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,debug_rom/debug_rom.sv,v0.4.1,70,adapted for the PKU_2602 SoC integration (70 differing lines against the upstream version)
+soc_axi/riscv-dbg/dm_csrs.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dm_csrs.sv,v0.4.1,,
+soc_axi/riscv-dbg/dm_mem.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dm_mem.sv,v0.4.1..v0.5.1,,
+soc_axi/riscv-dbg/dm_obi_top.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dm_obi_top.sv,v0.4.1,,
+soc_axi/riscv-dbg/dm_pkg.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dm_pkg.sv,v0.4.1,,
+soc_axi/riscv-dbg/dm_sba.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dm_sba.sv,v0.4.1,,
+soc_axi/riscv-dbg/dm_top.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dm_top.sv,v0.4..v0.4.1,,
+soc_axi/riscv-dbg/dmi_cdc.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dmi_cdc.sv,v0.3..v0.4.1,,
+soc_axi/riscv-dbg/dmi_jtag.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dmi_jtag.sv,v0.4..v0.4.1,,
+soc_axi/riscv-dbg/dmi_jtag_tap.sv,identical,riscv-dbg,https://github.com/pulp-platform/riscv-dbg,src/dmi_jtag_tap.sv,v0.4..v0.4.1,,
+soc_axi/rv_plic/README.md,small,rv_plic,https://github.com/pulp-platform/rv_plic,README.md,branch master,1,minor local edits (1 differing lines against the upstream version)
+soc_axi/rv_plic/plic_regmap.sv,small,rv_plic,https://github.com/pulp-platform/rv_plic,rtl/plic_regmap.sv,branch master,1,minor local edits (1 differing lines against the upstream version)
+soc_axi/rv_plic/plic_top.sv,identical,rv_plic,https://github.com/pulp-platform/rv_plic,rtl/plic_top.sv,commit 5b5c5a4c1c15 (2022-02-09),,
+soc_axi/rv_plic/rv_plic_gateway.sv,identical,rv_plic,https://github.com/pulp-platform/rv_plic,rtl/rv_plic_gateway.sv,commit 46c70bcd32d9 (2019-03-28),,
+soc_axi/rv_plic/rv_plic_target.sv,identical,rv_plic,https://github.com/pulp-platform/rv_plic,rtl/rv_plic_target.sv,commit 6046cfa51823 (2019-04-03),,
+soc_axi/serial_link/apb_pkg.sv,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/serial_link/channel_allocator/slink_ch_alloc.sv,identical,serial_link,https://github.com/pulp-platform/serial_link,src/channel_allocator/slink_ch_alloc.sv,v2.0.0..v2.0.1,,
+soc_axi/serial_link/channel_allocator/slink_channel_despread_sfr.sv,identical,serial_link,https://github.com/pulp-platform/serial_link,src/channel_allocator/slink_channel_despread_sfr.sv,v2.0.0..v2.0.1,,
+soc_axi/serial_link/channel_allocator/slink_channel_spread_sfr.sv,identical,serial_link,https://github.com/pulp-platform/serial_link,src/channel_allocator/slink_channel_spread_sfr.sv,v2.0.0..v2.0.1,,
+soc_axi/serial_link/channel_allocator/slink_stream_chopper.sv,identical,serial_link,https://github.com/pulp-platform/serial_link,src/channel_allocator/slink_stream_chopper.sv,v2.0.0..v2.0.1,,
+soc_axi/serial_link/channel_allocator/slink_stream_dechopper.sv,identical,serial_link,https://github.com/pulp-platform/serial_link,src/channel_allocator/slink_stream_dechopper.sv,v2.0.0..v2.0.1,,
+soc_axi/serial_link/include/axis_assign.svh,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/serial_link/include/axis_typedef.svh,unidentified,,,,,,adapted for the PKU_2602 SoC integration (upstream revision not identified by content matching)
+soc_axi/serial_link/include/slink_addrmap.svh,identical,serial_link,https://github.com/pulp-platform/serial_link,src/regs/slink_addrmap.svh,v2.0.0,,
+soc_axi/serial_link/regs/slink_reg.rdl,small,serial_link,https://github.com/pulp-platform/serial_link,src/regs/slink_reg.rdl,v2.0.0,2,minor local edits (2 differing lines against the upstream version)
+soc_axi/serial_link/regs/slink_reg.sv,medium,serial_link,https://github.com/pulp-platform/serial_link,src/regs/slink_reg.sv,v2.0.0,26,adapted for the PKU_2602 SoC integration (26 differing lines against the upstream version)
+soc_axi/serial_link/regs/slink_reg_pkg.sv,small,serial_link,https://github.com/pulp-platform/serial_link,src/regs/slink_reg_pkg.sv,v2.0.0,10,minor local edits (10 differing lines against the upstream version)
+soc_axi/serial_link/slink.sv,large,serial_link,https://github.com/pulp-platform/serial_link,src/slink.sv,v2.0.0,106,adapted for the PKU_2602 SoC integration (106 differing lines against the upstream version)
+soc_axi/serial_link/slink_isolate.sv,identical,serial_link,https://github.com/pulp-platform/serial_link,src/slink_isolate.sv,v2.0.0..v2.0.1,,
+soc_axi/serial_link/slink_link_layer.sv,small,serial_link,https://github.com/pulp-platform/serial_link,src/slink_link_layer.sv,v2.0.0,3,include paths adapted to this source tree; assertion includes removed (3 differing lines against the upstream version)
+soc_axi/serial_link/slink_phys_layer.sv,large,serial_link,https://github.com/pulp-platform/serial_link,src/slink_phys_layer.sv,v2.0.0,93,adapted for the PKU_2602 SoC integration (93 differing lines against the upstream version)
+soc_axi/serial_link/slink_pkg.sv,identical,serial_link,https://github.com/pulp-platform/serial_link,src/slink_pkg.sv,v2.0.0..v2.0.1,,
+soc_axi/serial_link/slink_prot_layer.sv,medium,serial_link,https://github.com/pulp-platform/serial_link,src/slink_prot_layer.sv,v2.0.0,14,adapted for the PKU_2602 SoC integration (14 differing lines against the upstream version)
+tech_specific/tc_clk.v,medium,tech_cells_generic,https://github.com/pulp-platform/tech_cells_generic,src/rtl/tc_clk.sv,v0.2.10,15,behavioural clock cells of the release; tc_clk_or2 appended for the die's clock-gating wrapper
